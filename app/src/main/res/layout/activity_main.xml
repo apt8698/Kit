@@ -3,11 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <include layout="@layout/widget_head" />
+
+    <FrameLayout
+        android:id="@+id/fl_content_volt"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rlv_content_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="android.support.v7.widget.LinearLayoutManager"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/tl_bar_volt"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h_head">
+
+    </FrameLayout>
 
 </LinearLayout>
