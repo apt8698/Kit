@@ -18,8 +18,8 @@ public class User implements RecyclerShow {
     @Override
     public void toShow(RecyclerShowVo recyclerShowVo, int type) {
         recyclerShowVo.id = index;
-        recyclerShowVo.info_1 = name;
-        recyclerShowVo.info_2 = info;
+        recyclerShowVo.section_1_1 = name;
+        recyclerShowVo.section_1_2 = info;
     }
 
 }
