@@ -15,7 +15,7 @@ public abstract class MultipleViewHolder extends RecyclerView.ViewHolder {
      * @param infoVo
      * @param listener
      */
-    abstract void setShow(RecyclerShowVo infoVo, View.OnClickListener listener);
+    public abstract void setShow(RecyclerShowVo infoVo, View.OnClickListener listener);
 
 
 

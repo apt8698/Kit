@@ -3,6 +3,7 @@ package com.kit.recycler;
 import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,11 +19,12 @@ public class MultipleRecyclerAdapter extends RecyclerView.Adapter<MultipleViewHo
 
     public MultipleRecyclerAdapter(Context ctx) {
         this.ctx = ctx;
-        inflater = LayoutInflater.from(ctx);
+        inflater = LayoutInflater.from(this.ctx);
     }
 
     public void setList(List<RecyclerShowVo> list) {
         this.list = list;
+        notifyDataSetChanged();
     }
 
     /**
@@ -50,6 +52,7 @@ public class MultipleRecyclerAdapter extends RecyclerView.Adapter<MultipleViewHo
 
     @Override
     public void onBindViewHolder(@NonNull MultipleViewHolder holder, int position) {
+        Log.v("MultipleRecyclerAdapter", "Position : " + position);
         holder.setShow(list.get(position), listener);
     }
 

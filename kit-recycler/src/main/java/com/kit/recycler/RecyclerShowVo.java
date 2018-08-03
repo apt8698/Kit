@@ -7,23 +7,21 @@ public class RecyclerShowVo {
     public String id;
     public String url;
 
-    public String section_1_1;
-    public String section_1_2;
-    public String section_1_3;
-    public String section_1_4;
-    public String section_1_5;
-
-    public String section_2_1;
-    public String section_2_2;
-    public String section_2_3;
-    public String section_2_4;
-    public String section_2_5;
-
-    public String section_3_1;
-    public String section_3_2;
-    public String section_3_3;
-    public String section_3_4;
-    public String section_3_5;
+    public String section_1;
+    public String section_2;
+    public String section_3;
+    public String section_4;
+    public String section_5;
+    public String section_6;
+    public String section_7;
+    public String section_8;
+    public String section_9;
+    public String section_10;
+    public String section_11;
+    public String section_12;
+    public String section_13;
+    public String section_14;
+    public String section_15;
 
     public String time_1;
     public String time_2;
